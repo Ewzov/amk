@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Главная страница АМК" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style_mob.css" />
+    <title>АМК</title>
+  </head>
+  <body>
+    <!-- МЕНЮ  -->
+    <header>
+      <div class="logo">
+        <img src="./img/Vector.png" alt="#" >
+        <p><a href="http://127.0.0.1:5500/main.html"> Альметьевский многопрофильный колледж</a></p>
+      </div>
+      <nav>
+        <ul class="main-menu">
+          <li class="dropdown">
+            <a href="#">Об обучении</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://127.0.0.1:5500/abiturientam.html">Абитуриентам</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Сведения о колледже</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://127.0.0.1:5500/about_us.html">О нас</a></li>
+              <li><a href="http://127.0.0.1:5500/ped_sostav.html">Педагогический состав</a></li>
+            </ul>
+          </li>
+          <li><a href="http://127.0.0.1:5500/news.html">Новости</a></li>
+          <li><a href="http://127.0.0.1:5500/raspisanie.html">Расписание</a></li>
+          <li><button class="login-btn">Вход</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <p>Альметьевский многопрофильный</p>
+      <p>колледж</p>
+    </div>
+
+    <!-- ПРЕИМУЩЕСТВА АМК -->
+    <div class="container">
+      <h1>Почему стоит поступить в АМК?</h1>
+      <section class="yellow">
+        <div class="benefits">
+          <div class="benefit-card">
+            <img src="./img/image 6.png" alt="" />
+            <div class="ben-card-text">
+              <div class="ben-card-text-part">
+                <h3>Широкий выбор специальностей</h3>
+                <p>
+                  Мы предлагаем широкий спектр специальностей, что позволяет
+                  абитуриентам выбрать направление, соответствующее их интересам
+                  и способностям
+                </p>
+              </div>
+              <div class="ben-card-text-part">
+                <h3>Практическая подготовка</h3>
+                <p>
+                  Большая часть учебного времени посвящена практическим занятиям
+                  на современном оборудовании, что обеспечивает студентам
+                  реальный опыт работы в выбранной области
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="./img/image 8.png" alt="" />
+            <div class="ben-card-text">
+              <div class="ben-card-text-part">
+                <h3>Современное оборудование</h3>
+                <p>
+                  Учебное оборудование аналогично промышленному, что позволяет
+                  студентам осваивать навыки на высокотехнологичных тренажерах
+                </p>
+              </div>
+              <div class="ben-card-text-part">
+                <h3>Возможности трудоустройства</h3>
+                <p>
+                  Колледж имеет партнерские отношения с местными предприятиями,
+                  что облегчает выпускникам поиск работы после окончания
+                  обучения
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ФОРМА ДЛЯ ЗАЯВКИ -->
+    <section class="success">
+      <h2>Начните свой путь к успеху</h2>
+      <p>
+        Отправьте заявку онлайн и сделайте первый шаг к своему блестящему
+        будущему!
+      </p>
+      <div class="forma">
+        <form>
+          <div class="form-group">
+            <label class="label_main" for="name">Как вас зовут?</label> <br />
+            <input type="text" id="name" placeholder="Иванов Иван Иванович" />
+          </div>
+
+          <div class="form-group">
+            <label class="label_main" for="email">Ваш электронный адрес?</label><br />
+            <input type="email" id="email" placeholder="ivan@gmail.com" />
+          </div>
+
+          <div class="form-group">
+            <label class="label_main" for="phone">Ваш номер телефона?</label><br />
+            <input type="tel" id="phone" placeholder="+7 000 000 00 00" />
+          </div>
+        </form>
+        <button type="submit" class="submit-btn">Отправить заявку</button>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="icons">
+        <div class="icon1">
+          <img src="./img/account_balance.png" alt="" />
+          <p>г.Альметьевск, ул.Мира, д.100</p>
+        </div>
+        <div class="icon2">
+          <img src="./img/call.png" alt="" />
+          <p>8 (1234) 56-78-90</p>
+        </div>
+        <div class="icon3">
+          <img src="./img/mail.png" alt="" />
+          <p>amk.almet@gmail.com</p>
+        </div>
+      </div>
+      <div class="stick">
+        <img src="./img/Rectangle 14.png" alt="" />
+      </div>
+      <div class="end">
+        <p>Гапоу “Альметьевский многопрофильный колледж”</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

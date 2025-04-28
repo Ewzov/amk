@@ -1,0 +1,375 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    margin: 0;
+  }
+  .logo img {
+    width: 66px;
+    height: 66px;
+  }
+  .logo a {
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  nav ul li {
+    font-size: 16px;
+  }
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    display: none;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .slog_mob {
+    display: block;
+  }
+  .slog_desk {
+    display: none;
+  }
+
+  .banner p {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f7f7f7;
+  }
+  .container {
+    margin: 0 15px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .yellow {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 0;
+  }
+  .benefits {
+    padding: 20px;
+    gap: 30px;
+  }
+  .benefits img {
+    width: 200px;
+    height: 200px;
+  }
+  .benefit-card {
+    flex-direction: column;
+  }
+  .ben-card-text {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0;
+    gap: 20px;
+  }
+  .ben-card-text-part {
+    gap: 10px;
+  }
+  .ben-card-text-part h3 {
+    font-size: 18px;
+  }
+  .ben-card-text-part p {
+    font-size: 14px;
+  }
+  .success {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .success h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .success p {
+    font-size: 16px;
+    padding: 0 15px 20px;
+  }
+  .forma input {
+    width: 100%;
+    height: 50px;
+    border-width: 2px;
+  }
+  .label_main {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #f7f7f7;
+  }
+  button {
+    width: 185px;
+    height: 50px;
+    font-size: 14px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icons p {
+    font-size: 12px;
+  }
+  .end {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
+
+/* ПЕДАГОГИЧЕСКИЙ_СОСТАВ */
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .yellow_ped {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .card_ped {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .card_ped img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .card_ped_text {
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .card_ped_text h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card_ped_text p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+/* НОВОСТИ  */
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .yellow_news {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .card_news {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .card_news img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .card_news_text {
+    line-height: 1.5;
+  }
+
+  .card_news_text h5 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .card_news_text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+/* РАСПИСАНИЕ */
+/* MOBILE SCHEDULE STYLES */
+@media (min-width: 320px) and (max-width: 768px) {
+  .banner_raspisanie {
+    height: auto;
+    padding: 20px 0;
+    background-size: cover;
+  }
+  .groups_raspisanie {
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    margin: 20px auto;
+  }
+  .groups_raspisanie h3 {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+  .groups {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .group a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+  .raspisanie_is-21 {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .raspisanie_is-21 h2 {
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+  .date p {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .yellow_raspisanie {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .para {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #172734;
+  }
+  .para:last-child {
+    border-bottom: none;
+  }
+  .yellow_raspisanie p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .yellow_raspisanie img {
+    display: none;
+  }
+}
+/* О НАС */
+@media (min-width: 320px) and (max-width: 768px) {
+.container {
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.banner_us {
+  height: 400px;
+  background-size: cover;
+  padding: 20px;
+}
+
+.banner_us p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.citata p {
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.yellow_us {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.yellow_us p,
+.yellow_us a,
+.yellow_us li {
+  font-size: 14px;
+  text-indent: 20px;
+  padding-bottom: 15px;
+}
+
+.yellow_us h4 {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.osen img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}}
