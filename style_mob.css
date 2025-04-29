@@ -286,6 +286,7 @@ nav.active {
     height: auto;
     padding: 20px 0;
     background-size: cover;
+    margin-top: 0;
   }
   .groups_raspisanie {
     width: 90%;

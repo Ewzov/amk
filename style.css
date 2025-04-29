@@ -192,6 +192,7 @@ nav button {
 }
 .container {
   max-width: 1920px;
+  padding: 0 40px;
   margin: auto;
 }
 h1 {
@@ -205,10 +206,15 @@ h1 {
 
 /* ЖЕЛТЫЙ ФОН ДЛЯ КАРТОЧЕК */
 .yellow {
-  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px;
   max-width: 1730px;
-  height: 1126px;
+  height: max-content;
+  border-radius: 46px;
   background: #f0d17a;
+  margin: 0 auto;
 }
 /* КАРТОЧКИ */
 .benefits {
@@ -380,12 +386,20 @@ footer {
 }
 
 /* ПЕДАГОГИЧЕСКИЙ_СОСТАВ */
+.h1_ped{
+  margin-top: 240px;
+}
 .yellow_ped {
-  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px;
   max-width: 1730px;
-  height: 3000px;
+  height: max-content;
+  border-radius: 46px;
   background: #f0d17a;
-  margin-bottom: 82px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .card_ped {
   display: flex;
@@ -409,7 +423,11 @@ footer {
 }
 
 /* НОВОСТИ */
+.h1_news{
+  margin-top: 240px;
+}
 .yellow_news {
+  margin: 0 auto;
   border-radius: 46px;
   max-width: 1730px;
   height: 2450px;
@@ -440,6 +458,7 @@ footer {
 
 /* РАСПИСАНИЕ */
 .banner_raspisanie {
+  margin-top: 140px;
   background-image: url(./img/расписание.png);
   background-attachment: cover;
   background-position: center;
@@ -652,11 +671,15 @@ footer {
   color: #f7f7f7;
 }
 .yellow_abtr {
-  width: 1730px;
-  height: 1800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px;
+  max-width: 1730px;
+  height: max-content;
   border-radius: 46px;
   background: #f0d17a;
-  margin-bottom: 40px;
+  margin: 0 auto;
 }
 .welcome {
   padding-top: 80px;
@@ -689,8 +712,9 @@ footer {
 .abiturienty_photos {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 110px;
-  padding: 80px 230px;
+  padding: 80px 0;
 }
 .big {
   color: #10218d;
