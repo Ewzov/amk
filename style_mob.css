@@ -1,50 +1,85 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width:320px) and (max-width: 1220px) {
   body {
-    max-width: 100%;
+    padding-top: 80px;
+    max-width: 1920px;
     overflow-x: hidden;
-  }
-  header {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 15px;
-  }
-  .logo {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    margin: 0;
-  }
-  .logo img {
-    width: 66px;
-    height: 66px;
-  }
-  .logo a {
-    padding: 10px 0;
-    font-size: 16px;
-    text-align: center;
-  }
-  nav ul {
+}
+header {
+    height: 80px;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    max-width: calc(100% - 50px);
+    height: 60px;
+    margin: 10px 0;
+    padding: 0 15px;
+    gap: 15px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo a {
+    padding: 0;
+    font-size: 14px;
+    white-space: normal;
+}
+
+/* Показываем бургер и скрываем обычное меню */
+.burger-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: #84a1b9;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+nav.active {
+    right: 0;
+}
+
+.main-menu {
     flex-direction: column;
     gap: 15px;
-    padding: 15px 0;
-  }
-  nav ul li {
-    font-size: 16px;
-  }
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     position: static;
+    box-shadow: none;
+    display: none;
+    background: rgba(247, 247, 247, 0.9);
+    margin: 10px 0 0 15px;
+    border-radius: 10px;
+    padding: 10px;
     opacity: 1;
     visibility: visible;
     transform: none;
-    box-shadow: none;
-    display: none;
-  }
-  .dropdown:hover .dropdown-menu {
+}
+
+.dropdown.active .dropdown-menu {
     display: block;
-  }
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 10px;
+}
   .slog_mob {
     display: block;
   }
@@ -135,6 +170,7 @@
     height: auto;
     padding: 20px;
   }
+
   .icons {
     flex-direction: column;
     gap: 15px;
@@ -146,10 +182,8 @@
     font-size: 12px;
     padding-top: 15px;
   }
-}
 
-/* ПЕДАГОГИЧЕСКИЙ_СОСТАВ */
-@media (min-width: 320px) and (max-width: 768px) {
+  /* ПЕДАГОГИЧЕСКИЙ_СОСТАВ */
   .container {
     margin: 0;
     padding: 0 10px;
@@ -197,9 +231,8 @@
     font-size: 14px;
     margin-bottom: 8px;
   }
-}
-/* НОВОСТИ  */
-@media (min-width: 320px) and (max-width: 768px) {
+
+  /* НОВОСТИ  */
   .container {
     margin: 0;
     padding: 0 10px;
@@ -245,10 +278,10 @@
     font-size: 14px;
     margin-bottom: 10px;
   }
-}
-/* РАСПИСАНИЕ */
-/* MOBILE SCHEDULE STYLES */
-@media (min-width: 320px) and (max-width: 768px) {
+
+  /* РАСПИСАНИЕ */
+  /* MOBILE SCHEDULE STYLES */
+
   .banner_raspisanie {
     height: auto;
     padding: 20px 0;
@@ -315,61 +348,151 @@
   .yellow_raspisanie img {
     display: none;
   }
-}
-/* О НАС */
-@media (min-width: 320px) and (max-width: 768px) {
-.container {
-  margin: 0;
-  padding: 0 10px;
-  width: 100%;
+
+  /* О НАС */
+  .container {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .banner_us {
+    height: 400px;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .banner_us p {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .citata p {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .yellow_us {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .yellow_us p,
+  .yellow_us a,
+  .yellow_us li {
+    font-size: 14px;
+    text-indent: 20px;
+    padding-bottom: 15px;
+  }
+
+  .yellow_us h4 {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .osen img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  /* АБИТУРИЕНТАМ */
+  .banner_abtr {
+    height: 400px;
+    background-size: cover;
+    padding: 20px;
+  }
+  .banner_abtr p {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f7f7f7;
+    margin: 5px 0;
+  }
+  .container {
+    padding: 15px;
+  }
+  .container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .yellow_abtr {
+    width: 100%;
+    height: 1500px;
+    border-radius: 15px;
+    background: #f0d17a;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .welcome {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .welcome h3 {
+    color: #172734;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .welcome h5 {
+    color: #172734;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+  .abiturienty_photos {
+    display: none;
+  }
+  .text_abtr {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .big {
+    color: #10218d;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+  }
+  .yellow_abtr p {
+    color: #172734;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 20px;
+    margin: 10px 0;
+  }
 }
 
-.banner_us {
-  height: 400px;
-  background-size: cover;
-  padding: 20px;
-}
 
-.banner_us p {
-  font-size: 20px;
-  line-height: 1.3;
-}
 
-.citata p {
-  font-size: 16px;
-  padding: 20px;
-  text-align: center;
+/* МОДАЛЬНОЕ ОКНО */
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 20% auto;
+    padding: 20px;
+  }
 }
-
-h1 {
-  font-size: 22px;
-  margin: 30px 0;
-  width: 100%;
-}
-
-.yellow_us {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.yellow_us p,
-.yellow_us a,
-.yellow_us li {
-  font-size: 14px;
-  text-indent: 20px;
-  padding-bottom: 15px;
-}
-
-.yellow_us h4 {
-  font-size: 18px;
-  padding: 15px 0;
-}
-
-.osen img {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-}}

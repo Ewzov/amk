@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="О нас" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_mob.css" />
+    <meta name="description" content="О нас" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style_mob.css" />
     <title>О нас</title>
   </head>
   <body>
@@ -12,35 +14,30 @@
     <header>
       <div class="logo">
         <img src="./img/Vector.png" alt="#" />
-        <p>
-          <a href="http://127.0.0.1:5500/main.html">
-            Альметьевский многопрофильный колледж</a
-          >
-        </p>
+        <p><a href="index.html"> Альметьевский многопрофильный колледж</a></p>
+      </div>
+      <div class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <nav>
         <ul class="main-menu">
           <li class="dropdown">
             <a href="#">Об обучении</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Абитуриентам</a></li>
+              <li><a href="abiturientam.html">Абитуриентам</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#">Сведения о колледже</a>
             <ul class="dropdown-menu">
-              <li><a href="http://127.0.0.1:5500/about_us.html">О нас</a></li>
-              <li>
-                <a href="http://127.0.0.1:5500/ped_sostav.html"
-                  >Педагогический состав</a
-                >
-              </li>
+              <li><a href="about_us.html">О нас</a></li>
+              <li><a href="ped_sostav.html">Педагогический состав</a></li>
             </ul>
           </li>
-          <li><a href="http://127.0.0.1:5500/news.html">Новости</a></li>
-          <li>
-            <a href="http://127.0.0.1:5500/raspisanie.html">Расписание</a>
-          </li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="raspisanie.html">Расписание</a></li>
           <li><button class="login-btn">Вход</button></li>
         </ul>
       </nav>
@@ -63,9 +60,7 @@
       <h1>О нас</h1>
       <section class="yellow_us">
         <p>
-          <a href="http://127.0.0.1:5500/main.html"
-            >Альметьевский многопрофильный колледж</a
-          >
+          <a href="main.html">Альметьевский многопрофильный колледж</a>
           – это современное образовательное учреждение, которое готовит
           высококвалифицированных специалистов для различных отраслей экономики.
           Мы сочетаем традиции качественного образования и инновационные подходы
@@ -86,25 +81,31 @@
           </p>
           <ul>
             <li>
-              <font color="#10218D">2000</font> – открытие ГПТУ №12 с первыми специальностями нефтяного
-              профиля
+              <font color="#10218D">2000</font> – открытие ГПТУ №12 с первыми
+              специальностями нефтяного профиля
             </li>
             <li>
-              <font color="#10218D">2005</font> – расширение перечня специальностей, начало подготовки кадров
-              для машиностроения и строительства
+              <font color="#10218D">2005</font> – расширение перечня
+              специальностей, начало подготовки кадров для машиностроения и
+              строительства
             </li>
             <li>
-              <font color="#10218D">2008</font> – реорганизация в профессиональный лицей с внедрением новых
-              образовательных стандартов
-            </li>
-            <li><font color="#10218D">2009</font> – получение статуса многопрофильного колледжа</li>
-            <li>
-              <font color="#10218D">2015</font> – вхождение в топ-100 лучших СПО России по версии WorldSkills
-              Russia
+              <font color="#10218D">2008</font> – реорганизация в
+              профессиональный лицей с внедрением новых образовательных
+              стандартов
             </li>
             <li>
-              <font color="#10218D">2020-e</font> – цифровая трансформация образовательного процесса,
-              открытие современных мастерских по стандартам WorldSkills.
+              <font color="#10218D">2009</font> – получение статуса
+              многопрофильного колледжа
+            </li>
+            <li>
+              <font color="#10218D">2015</font> – вхождение в топ-100 лучших СПО
+              России по версии WorldSkills Russia
+            </li>
+            <li>
+              <font color="#10218D">2020-e</font> – цифровая трансформация
+              образовательного процесса, открытие современных мастерских по
+              стандартам WorldSkills.
             </li>
           </ul>
           <p>
@@ -132,13 +133,39 @@
           <p>amk.almet@gmail.com</p>
         </div>
       </div>
-      <div class="stick">
-        <img src="./img/Rectangle 14.png" alt="" />
-      </div>
+      <div class="stick"></div>
       <div class="end">
         <p>Гапоу “Альметьевский многопрофильный колледж”</p>
       </div>
     </footer>
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход в личный кабинет</h2>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="login-username">Логин</label>
+            <input
+              type="text"
+              id="login-username"
+              placeholder="Введите ваш логин"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Пароль</label>
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Введите пароль"
+              required
+            />
+          </div>
+          <button type="submit" class="submit-btn">Войти</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

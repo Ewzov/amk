@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Об обучении" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Абитуриентам" />
+    <meta name="description" content="Абитуриентам">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style_mob.css" />
     <title>Абитуриентам</title>
@@ -11,36 +13,31 @@
     <!-- МЕНЮ  -->
     <header>
       <div class="logo">
-        <img src="./img/Vector.png" alt="#" />
-        <p>
-          <a href="http://127.0.0.1:5500/main.html">
-            Альметьевский многопрофильный колледж</a
-          >
-        </p>
+        <img src="./img/Vector.png" alt="#" >
+        <p><a href="index.html"> Альметьевский многопрофильный колледж</a></p>
       </div>
+      <div class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
       <nav>
         <ul class="main-menu">
           <li class="dropdown">
             <a href="#">Об обучении</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Абитуриентам</a></li>
+              <li><a href="abiturientam.html">Абитуриентам</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#">Сведения о колледже</a>
             <ul class="dropdown-menu">
-              <li><a href="http://127.0.0.1:5500/about_us.html">О нас</a></li>
-              <li>
-                <a href="http://127.0.0.1:5500/ped_sostav.html"
-                  >Педагогический состав</a
-                >
-              </li>
+              <li><a href="about_us.html">О нас</a></li>
+              <li><a href="ped_sostav.html">Педагогический состав</a></li>
             </ul>
           </li>
-          <li><a href="http://127.0.0.1:5500/news.html">Новости</a></li>
-          <li>
-            <a href="http://127.0.0.1:5500/raspisanie.html">Расписание</a>
-          </li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="raspisanie.html">Расписание</a></li>
           <li><button class="login-btn">Вход</button></li>
         </ul>
       </nav>
@@ -66,23 +63,44 @@
           <img src="./img/студенты1.png" alt="" />
           <img src="./img/студенты2.png" alt="" />
         </div>
-        <p>
-          Как поступить? <br />
-          1. Выберите специальность <br />
-          Ознакомьтесь с перечнем направлений подготовки и определитесь с
-          профессией. <br />
-          2. Подайте документы <br />
-          Необходимые документы: <br />
-          Аттестат (или справка об окончании 9/11 классов) <br />
-          Паспорт + копия 4 фото 3x4 <br />
-          Медицинская справка 086/у СНИЛС (при наличии) <br />
-          Способы подачи: <br />
-          Лично в приемной комиссии (г. Альметьевск, ул. Мира, 100) <br />
-          Через Госуслуги По почте (заказным письмом) <br />
-          3. Сроки приема <br />
-          С 20 июня по 15 августа — на базе 9 классов<br />
-          С 20 июня по 10 августа — на базе 11 классов
-        </p>
+        <div class="text_abtr">
+          <div class="big">Как поступить?</div>
+          <br />
+          <div class="big">1. Выберите специальность</div>
+          <br />
+          <p>
+            Ознакомьтесь с перечнем направлений подготовки и определитесь с
+            профессией.
+          </p>
+          <br />
+          <div class="big">2. Подайте документы</div>
+          <br />
+          <p>
+            Необходимые документы: <br />
+            - Аттестат (или справка об окончании 9/11 классов) <br />
+            - Паспорт + копия 4 фото 3x4 <br />
+            - Медицинская справка 086/у СНИЛС (при наличии) <br />
+            Способы подачи: <br />
+            - Лично в приемной комиссии (г. Альметьевск, ул. Мира, 100) <br />
+            - Через Госуслуги По почте (заказным письмом)
+          </p>
+          <br />
+          <div class="big">3. Сроки приема</div>
+          <br />
+          <p>
+            С 20 июня по 15 августа — на базе 9 классов<br />
+            С 20 июня по 10 августа — на базе 11 классов
+          </p>
+          <div class="contacty">
+            <div class="big">Контакты приемной комиссии</div><br>
+            <p>
+              - Адрес: г. Альметьевск, ул. Мира, 100 (каб. 108) <br />
+              - Телефон: 8 (1234) 56-78-90 <br />
+              - Email: priem-amk@edu.ru <br />
+              - Часы работы: Пн-Пт 9:00-18:00, Сб 9:00-14:00
+            </p>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -103,12 +121,30 @@
         </div>
       </div>
       <div class="stick">
-        <img src="./img/Rectangle 14.png" alt="" />
+        
       </div>
       <div class="end">
         <p>Гапоу “Альметьевский многопрофильный колледж”</p>
       </div>
     </footer>
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход в личный кабинет</h2>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="login-username">Логин</label>
+            <input type="text" id="login-username" placeholder="Введите ваш логин" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" placeholder="Введите пароль" required>
+          </div>
+          <button type="submit" class="submit-btn">Войти</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

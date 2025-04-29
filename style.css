@@ -8,44 +8,48 @@
 body {
   background-color: #f5f5f5;
   max-width: 1920px;
+  margin: 0 auto;
 }
-
-/* МЕНЮ */
+/* МЕНЮ ДЛЯ ДЕСКТОПА */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #84a1b9;
-  width: 1920px;
   height: 140px;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 80px;
 }
+
 .logo {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin: 23px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 50px;
   border-radius: 50px;
   width: 700px;
   height: 80px;
   background-color: #f7f7f7;
-}
-.logo a {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-right: 80px;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  color: #172734;
-  text-decoration: none;
+  padding: 0 20px;
 }
 
-/* НАВИГАЦИЯ В МЕНЮ */
+.logo img {
+  height: 60px;
+}
+
+.logo a {
+  padding: 40px 80px 40px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #172734;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* НАВИГАЦИЯ */
 nav ul {
   display: flex;
   justify-content: center;
@@ -53,25 +57,27 @@ nav ul {
   gap: 70px;
   list-style: none;
 }
+
 nav ul li {
   font-weight: 600;
   font-size: 18px;
-  text-align: center;
   position: relative;
 }
+
 nav ul li a {
   text-decoration: none;
   transition: color 0.3s;
   color: #172734;
   display: block;
 }
+
 nav ul li a:hover {
   color: #ffcc00;
 }
+
 nav button {
   font-weight: 600;
   font-size: 16px;
-  text-align: center;
   color: #f7f7f7;
   border-radius: 12px;
   padding: 3px 30px;
@@ -79,10 +85,12 @@ nav button {
   height: 40px;
   background: #172734;
   cursor: pointer;
+  border: none;
 }
 
 /* ВЫПАДАЮЩЕЕ МЕНЮ */
 .dropdown-menu {
+  text-align: center;
   position: absolute;
   background: white;
   min-width: 200px;
@@ -97,19 +105,66 @@ nav button {
   padding: 10px 10px;
   gap: 5px;
 }
+
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+
 .dropdown-menu li a {
   padding: 8px 10px;
   font-size: 14px;
   color: #555;
 }
+
 .dropdown-menu li a:hover {
   background: #f5f5f5;
   color: #172734;
+}
+
+/* БУРГЕР-ИКОНКА (скрыта на десктопе) */
+.burger-btn {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.burger-btn span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #172734;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.burger-btn span:nth-child(1) {
+  top: 0;
+}
+
+.burger-btn span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-btn span:nth-child(3) {
+  bottom: 0;
+}
+
+.burger-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 .slog_mob {
   display: none;
@@ -137,8 +192,7 @@ nav button {
 }
 .container {
   max-width: 1920px;
-  margin-left: 95px;
-  margin-right: 95px;
+  margin: auto;
 }
 h1 {
   font-weight: 600;
@@ -268,7 +322,7 @@ button {
 
 /* ПОДВАЛ */
 footer {
-  width: 1920px;
+  max-width: 1920px;
   height: 165px;
   background: #84a1b9;
   padding-top: 44px;
@@ -309,8 +363,11 @@ footer {
 }
 /* РАЗДЕЛИТЕЛЬ */
 .stick {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 1441px;
+  height: 2px;
+  background: #172734;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .end {
   text-transform: capitalize;
@@ -413,6 +470,7 @@ footer {
   gap: 100px;
 }
 .group {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -479,7 +537,7 @@ footer {
 
 /* О НАС */
 .banner_us {
-  background-image: url(./img/banner\ amk.png);
+  background-image: url(./img/banner_amk.png);
   background-attachment: cover;
   background-position: center;
   width: 100%;
@@ -582,7 +640,6 @@ footer {
   width: 100%;
   height: 840px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -596,12 +653,15 @@ footer {
 }
 .yellow_abtr {
   width: 1730px;
-  height: 1959px;
+  height: 1800px;
   border-radius: 46px;
   background: #f0d17a;
+  margin-bottom: 40px;
 }
 .welcome {
-  padding: 80px 115px;
+  padding-top: 80px;
+  padding-left: 115px;
+  padding-right: 115px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -626,9 +686,101 @@ footer {
   line-height: normal;
   letter-spacing: 1.4px;
 }
-.abiturienty_photos{
+.abiturienty_photos {
   display: flex;
   align-items: center;
   gap: 110px;
-  
+  padding: 80px 230px;
+}
+.big {
+  color: #10218d;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.yellow_abtr p {
+  color: #172734;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+.text_abtr {
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.modal-content {
+  background-color: #f7f7f7;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.modal h2 {
+  color: #172734;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #172734;
+  cursor: pointer;
+}
+.close:hover {
+  color: #d9aa2a;
+}
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #172734;
+}
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d9aa2a;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.login-form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #172734;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.login-form .submit-btn:hover {
+  background-color: #d9aa2a;
+  color: #172734;
 }
